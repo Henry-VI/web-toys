@@ -1,0 +1,32 @@
+@import 'tailwindcss';
+
+:root {
+    background-color: #EF3340;
+}
+
+@keyframes openanim {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 50%;
+    }
+}
+
+#center {
+    animation: openanim forwards 3s;
+    animation-delay: 1s
+}
+
+#hiddentitle {
+    animation: showtitle forwards 1s linear;
+    animation-delay: 3s;
+}
+@keyframes showtitle {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
