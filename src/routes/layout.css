@@ -7,6 +7,10 @@
     font-family: Inter, Arial, Helvetica, sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 @keyframes openanim {
     0% {
         width: 0%;
@@ -39,6 +43,28 @@
   }
 }
 
+@keyframes slideupeu {
+  0% {
+    opacity: 100;
+    transform: translateY(50vh);
+  }
+  100% {
+    opacity: 100;
+    transform: translateY(-25vh);
+  }
+}
+
+@keyframes spineu {
+  0% {
+    transform: rotateZ(0deg) translateY(-25vh);
+    transform-origin: center 12.5%;
+  }
+  100% {
+    transform: rotateZ(360deg) translateY(-25vh);
+    transform-origin: center 12.5%;
+  }
+}
+
 @keyframes expand2 {
   100% {
     width: 100%;
@@ -47,7 +73,7 @@
 
 @media (width >= 48rem ){
   #center {
-      animation: openanim 3s 1s forwards, expand2 1s linear 5s forwards;
+      animation: openanim 3s 1s forwards, expand2 1s linear 7s forwards;
   }
   #hiddentitle {
     animation: showtitle forwards 1s linear;
