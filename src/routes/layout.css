@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 @import 'tailwindcss';
 
 :root {
     background-color: #EF3340;
+    font-family: Inter, Arial, Helvetica, sans-serif;
 }
 
 @keyframes openanim {
@@ -13,14 +16,25 @@
     }
 }
 
-#center {
-    animation: openanim forwards 3s;
-    animation-delay: 1s
+@keyframes fadeout {
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (width >= 48rem ){
+  #center {
+      animation: openanim forwards 3s;
+      animation-delay: 1s
+  }
+  #hiddentitle {
+    animation: showtitle forwards 1s linear;
+    animation-delay: 3s;
+  }
 }
 
 #hiddentitle {
-    animation: showtitle forwards 1s linear;
-    animation-delay: 3s;
+   font-family: Boldonse;
 }
 @keyframes showtitle {
     0% {
