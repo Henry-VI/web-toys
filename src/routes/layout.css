@@ -22,10 +22,32 @@
   }
 }
 
+@keyframes fadein {
+  100% {
+    opacity: 100;
+  }
+}
+
+@keyframes slideup {
+  0% {
+    opacity: 100;
+    transform: translateY(50vh);
+  }
+  100% {
+    transform: translateY(-25vh);
+    opacity: 100;
+  }
+}
+
+@keyframes expand2 {
+  100% {
+    width: 100%;
+  }
+}
+
 @media (width >= 48rem ){
   #center {
-      animation: openanim forwards 3s;
-      animation-delay: 1s
+      animation: openanim 3s 1s forwards, expand2 1s linear 5s forwards;
   }
   #hiddentitle {
     animation: showtitle forwards 1s linear;
